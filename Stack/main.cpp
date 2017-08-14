@@ -5,6 +5,7 @@
 #include <iostream>
 #include <deque>
 #include <queue>
+#include <map>
 #include "Stack.h"
 
 int main()
@@ -24,20 +25,25 @@ int main()
 //		deka.pop_front();
 //	}
 
-	Stack<int> boba;
+//	Stack<int> boba;
+//
+//	boba.push(2);
+//	boba.push(34);
+//	boba.push(56);
+//	boba.push(78);
+//	boba.push(89);
+//	boba.push(123);
+//	boba.push(234);
+//	boba.push(2456);
+//
+//	for (unsigned i = 0, end = boba.size(); i < end; i++)
+//	{
+//		std::cout << boba.get() << std::endl;
+//		boba.pop();
+//	}
 
-	boba.push(2);
-	boba.push(34);
-	boba.push(56);
-	boba.push(78);
-	boba.push(89);
-	boba.push(123);
-	boba.push(234);
-	boba.push(2456);
+	std::map<int, std::string> map;
 
-	for (unsigned i = 0, end = boba.size(); i < end; i++)
-	{
-		std::cout << boba.get() << std::endl;
-		boba.pop();
-	}
+	map.insert({25, "Roma"});
+	std::cout << map.at(25) << std::endl;
 }
